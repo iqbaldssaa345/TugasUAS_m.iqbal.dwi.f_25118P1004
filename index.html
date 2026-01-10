@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Seminar Teknologi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LANDING PAGE -->
+    <section class="landing">
+        <h1>Seminar Teknologi Kampus 2026</h1>
+        <p class="desc">
+            Seminar tentang perkembangan teknologi digital, AI, dan keamanan siber
+            untuk mahasiswa dan masyarakat umum.
+        </p>
+        <p><strong>Tanggal:</strong> 20 Maret 2026</p>
+        <p><strong>Lokasi:</strong> Aula Kampus Utama</p>
+        <p class="kuota">Peserta terdaftar: <span id="jumlahPeserta">0</span> / 50</p>
+    </section>
+
+    <!-- FORM PENDAFTARAN -->
+    <section class="form-section">
+        <h2>Form Pendaftaran</h2>
+
+        <form id="formDaftar">
+            <label>
+                Nama Lengkap
+                <input type="text" id="nama">
+            </label>
+
+            <label>
+                Email
+                <input type="text" id="email">
+            </label>
+
+            <label>
+                Nomor HP
+                <input type="text" id="hp">
+            </label>
+
+            <label>
+                Kategori Peserta
+                <select id="kategori">
+                    <option value="">-- Pilih --</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Umum">Umum</option>
+                </select>
+            </label>
+
+            <button type="submit">Daftar</button>
+        </form>
+
+        <p id="pesan" class="pesan"></p>
+    </section>
+
+    <!-- DAFTAR PESERTA -->
+    <section class="list-section">
+        <h2>Daftar Peserta</h2>
+        <ul id="listPeserta"></ul>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

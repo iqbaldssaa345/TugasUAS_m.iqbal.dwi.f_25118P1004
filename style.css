@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* LANDING */
+.landing {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.landing h1 {
+    margin-top: 0;
+    color: #062ba4;
+}
+
+.desc {
+    color: #333;
+}
+
+.kuota {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* FORM */
+.form-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 14px;
+}
+input, select{
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #1e40af;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background: #374f9a;
+}
+.pesan{
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+/* LIST PESERTA */
+.list-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+ul{
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .landing, .form-section, .list-section {
+        flex: 1 1 45%;
+    }
+
+    .list-section {
+        flex: 1 1 100%;
+    }
+}
